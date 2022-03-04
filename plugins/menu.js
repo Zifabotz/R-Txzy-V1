@@ -6,9 +6,9 @@ let fetch = require('node-fetch')
 let moment = require('moment-timezone')
 const defaultMenu = {
   before: `
-┌─〔 RielxBot 〕
-├ Hai, *%name!*✨
-├ Memory Used : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
+┌─〔 ZIFABOTZ 〕
+├ Hai👋, *%name!*
+├ Memory Used📱 : *${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB*
 └────
 %readmore`.trimStart(),
   header: '┌─〔 %category 〕',
@@ -187,15 +187,15 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
         "listMessage": {
           "title": `${ucapan()}, ${name}`.trim(),
-          "description": "*© RielXzy🗿*",
+          "description": "*© Zifabotz*",
           "footerText": "Jika menemukan bug, error atau kesulitan dalam penggunaan silahkan laporkan/tanyakan kepada owner.",
-          "buttonText": "*KLIK DISINI TOD*",
+          "buttonText": "*KLIK DISINI MEK*",
           "listType": "SINGLE_SELECT",
           "sections": [
             {
               "rows": [{
-                "title": `|👤|Pemilik Bot`,
-                "description": "Nomor Pemilik Bot (owner)",
+                "title": `|🕴️|Pemilik zifabotz`,
+                "description": "Nomor Pemilik Zifabotz (owner)",
                 "rowId": `${_p}creator`
               }, {
                 "title": "|📝|Syarat Ketentuan dan Peraturan",
