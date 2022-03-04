@@ -1,7 +1,7 @@
 let fetch = require('node-fetch')
 let handler = async(m, { conn }) => {
     let teks = `
-Kebijakan Privasi, Syarat Ketentuan dan Peraturan Riel Bot
+Kebijakan Privasi, Syarat Ketentuan dan Peraturan Zifabotz!!!
 
 Kebijakan Privasi Riel Bot
 1. ⳹ ❋ཻུ۪۪⸙Zifabotz⳹ ❋ཻུ۪۪⸙ tidak akan merekam data riwayat chat user.
