@@ -388,7 +388,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
             }, {
               "rows": [{
                 "title":  `|❤️|THANKS TO`,
-                "description": "TERIMAKASIH KEPADA DEVELOPER SC",
+                "description": "TERIMAKASIH KEPADA ORANG YG TELAH MEMBANTU",
                 "rowId": `.tqto`
               }],
               "title": "THANKS TO"
