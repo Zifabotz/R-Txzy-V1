@@ -5,7 +5,7 @@ let handler = async (m, { conn, usedPrefix }) => {
     conn.caklontong = conn.caklontong ? conn.caklontong : {}
     let id = m.chat
     if (id in conn.caklontong) {
-        conn.reply(m.chat, 'Masih ada soal belum terjawab di chat ini', conn.caklontong[id][0])
+        conn.reply(m.chat, 'ini aja belom Lo jawab_T,udah minta soal lagi', conn.caklontong[id][0])
         throw false
     }
     let src = await (await fetch('https://raw.githubusercontent.com/BochilTeam/database/master/games/caklontong.json')).json()
