@@ -4,14 +4,8 @@ BIG THANKS TO
 
 •Allah swt
 •My ortu
-•Nurutomo
-•Xteam
-•Riel(owner)
-•Tio
-•Alyaa
-•Lynxzy
-•Exc
-•Zeks
+•⳹ ❋ཻུ۪۪⸙Zifabotz⳹ ❋ཻུ۪۪⸙
+•Rozi
 •Penyedia Layanan API
 •Orang-orang yang Berdonasi
 `.trim(), watermark, 'Back', '.menu')
