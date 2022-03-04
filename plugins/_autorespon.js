@@ -31,7 +31,7 @@ handler.all = async function (m, { isBlocked }) {
         this.send2ButtonLoc(m.chat, await (await fetch(fla + 'sewa bot')).buffer(), `╠═〘 Beli Bot 〙 ═
 ╠➥ *1 Bulan* :      *Rp 15000*
 ╠➥ *2 Bulan* : *Rp 25000*
-╠➥ *Premium* :   *Rp 15000*
+╠➥ *8 Bulan* :   *Rp 65000*
 ║
 ╠═〘 PEMBAYARAN 〙 ═
 ╠➥ Dana, Dan Pulsa
