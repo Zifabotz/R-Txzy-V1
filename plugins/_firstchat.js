@@ -15,13 +15,13 @@ handler.all = async function (m) {
     if (new Date - user.pc < 86400000) return // setiap 24 jam sekali
     await conn.send2ButtonLoc(m.chat, await(await fetch(thumbfoto)).buffer(), `
 *Hi ${name}, ${ucapan()}*
-Saya adalah zifabotz yg siap melayani anda.
-
-*Harap untuk tidak menelpon, meminta save, atau spam dalam penggunaan bot*
-Silahkan baca rules dan mematuhi rules demi kenyamanan kita bersama.
-Terimakasih
-
-Jika ada kendala silahkan hubungi owner.
+───⬡ 〔 𝐁𝐎𝐓 𝐂𝐇𝐀𝐓 〕 ⬡────
+╭───────────────╮
+        My name *ZIFABOTZ*
+        Salah satu Bot diwhatsapp
+╰───────────────╯
+Silahkan mematuhi Rules Bot
+Demi kenyamanan kita bersama.
 `.trim(), watermark, 'Menu', '.?', 'Rules', '.rules')
     user.pc = new Date * 1
 }
