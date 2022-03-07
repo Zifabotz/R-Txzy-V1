@@ -8,28 +8,29 @@ const chats = conn.chats.all()
 const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
-┌──〔 zifabotz 〕──⬣
-│⬡ Hai👋, %name!
-│⬡ 💸Tersisa *%limit Limit*
-│⬡ Role *%role*
-│⬡ Level *%level (%exp / %maxexp)*
-│⬡ [%xp4levelup]
-│⬡ %totalexp XP secara Total
-│ 
-│⬡ Hari: *%week %weton*
-│⬡ Tanggal: *%date*
-│⬡ WaktuIslam:*%dateIslamic*
-│⬡ Waktu: *%time*
-│
-│⬡ Uptime: *%uptime (%muptime)*
-│⬡ Database: %rtotalreg dari %totalreg
-│⬡ Memory Used : 
-│⬡ ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
-╰────────────⬣
+╭═══════════════════════⬣
+║╭──❉ 〔⳹ ❋ཻུ۪۪⸙𝙕𝙞𝙛𝙖𝙗𝙤𝙩𝙯⳹ ❋ཻུ۪۪〕 ❉──────
+║│➸Hai, %name!
+║│➸Tersisa *%limit Limit*
+║│➸Role *%role*
+║│➸Level *%level (%exp / %maxexp)*
+║│➸[%xp4levelup]
+║│➸%totalexp XP secara Total
+║╭──❉ 〔⳹ ❋ཻུ۪۪⸙TANGGAL⳹ ❋ཻུ۪۪〕 ❉──────
+║│➸Hari: *%week %weton*
+║│➸Tanggal: *%date*
+║│➸WaktuIslam:*%dateIslamic*
+║│➸Waktu: *%time*
+║╭──❉ 〔⳹ ❋ཻུ۪۪⸙TIME⳹ ❋ཻུ۪۪〕 ❉──────
+║│➸Uptime: *%uptime (%muptime)*
+║│➸Database: %rtotalreg dari %totalreg
+║│➸Memory Used : 
+║│➸${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${Math.round(require('os').totalmem / 1024 / 1024)}MB
+╰─────────❉
 %readmore`.trimStart(),
-  header: '*┌──〔 %category〕*',
-  body: '*│*⦁ %cmd %islimit %isPremium',
-  footer: '*└────⦁*\n',
+  header: '*║╭──❉ 〔%category〕*',
+  body: '║│➸%cmd %islimit %isPremium',
+  footer: '*╰───❉*\n',
   after: `
   ⬣━〔Powered By Rozi〕━⬣
 `,
@@ -220,8 +221,20 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
 			return conn.relayWAMessage(conn.prepareMessageFromContent(m.chat, {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
-                        "description": `HALLO KAK ADA APA YA?? KALAU ANDA MAU MELIHAT LIST MENU KLIK DI BAWAH`.trim(),
-                        "footerText": "Zifabotz",
+                        "description": `╭═══════════════════════
+║╭──❉ 〔 ⳹ ❋ཻུ۪۪⸙𝙕𝙞𝙛𝙖𝙗𝙤𝙩𝙯⳹ ❋ཻུ۪۪ 〕 ❉────── 
+║│➸⏰Aktif selama ${uptime}
+║│➸⚡Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
+║│➸zifabotz
+║│➸*${conn.blocklist.length}* Terblock
+║│➸*${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
+║│➸*${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
+╰─────────❉
+_____•••••••••
+(_𝙱𝚎𝚋𝚎𝚛𝚊𝚙𝚊 𝚋𝚞𝚝𝚝𝚘𝚗 𝚊𝚍𝚊 𝚢𝚐 𝚐𝚊𝚔 𝚋𝚎𝚛𝚏𝚞𝚗𝚐𝚜𝚒_)
+
+▌│█║▌║▌║║▌║▌║█│▌ `.trim(),
+                        "footerText": "⳹ ❋ཻུ۪۪⸙𝙕𝙞𝙛𝙖𝙗𝙤𝙩𝙯⳹ ❋ཻུ۪۪⸙ by.rozi",
                         "buttonText": "*Klik Disini mek*",
                         "listType": "SINGLE_SELECT",
                         "sections": [
@@ -377,7 +390,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                                     "description": "Terimakasih untuk user yang telah menggunakan bot, jika ada kesalahan atau permintaan bisa chat ke nomor owner\nNote: chat P/main² tidak akan di respon(user bisa terkena banned/block)",
                                     "rowId": ".creator"
                                 }, {
-                                    "title": "|❤️| Thanks To",
+                                    "title": "|🙏| Thanks To",
                                     "description": "Terima kasih banyak untuk user yang telah berpartisipasi dalam bot",
                                     "rowId": ".tqto"
                                 }],
@@ -504,18 +517,18 @@ function clockString(ms) {
 }
 function ucapan() {
   const time = moment.tz('Asia/Jakarta').format('HH')
-  res = "udah malam tidur gih"
+  res = "udah malam tidur gih •>•"
   if (time >= 4) {
-    res = "Selamat pagi🌅"
+    res = "Selamat pagi hari •>•"
   }
   if (time > 10) {
-    res = "Selamat siang🏙️"
+    res = "Selamat siang hari •>•"
   }
   if (time >= 15) {
-    res = "Selamat sore🌇"
+    res = "Selamat sore hari •>•"
   }
   if (time >= 18) {
-    res = "Selamat malam🌃"
+    res = "Selamat malam hari •>•"
   }
   return res
 }
