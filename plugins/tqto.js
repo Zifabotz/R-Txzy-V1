@@ -8,7 +8,7 @@ BIG THANKS TO
 •Rozi
 •Penyedia Layanan API
 •Orang-orang yang Berdonasi
-`.trim(), watermark, 'Back', '.menu')
+`.trim(), watermark, 'Menu', '.menu')
 handler.help = ['Thanksto', 'tqto']
 handler.tags = ['main']
 handler.command = /^(tqto|thanks|thanksto|bigthanks)$/i
