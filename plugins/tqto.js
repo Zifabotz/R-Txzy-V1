@@ -5,7 +5,7 @@ BIG THANKS TO
 •Allah swt
 •My ortu
 •⳹ ❋ཻུ۪۪⸙Zifabotz⳹ ❋ཻུ۪۪⸙
-•Rozi
+•Rozi{OWNER ZIFABOTZ}
 •Penyedia Layanan API
 •Orang-orang yang Berdonasi
 `.trim(), watermark, 'Menu', '.menu')
