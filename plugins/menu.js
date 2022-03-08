@@ -240,15 +240,15 @@ _____•••••••••
                         "sections": [
                             {
                                 "rows": [{
-                                    "title": "|🛠️| Status Bot",
+                                    "title":  "|🛠️| ❯╾Status Bot╼-",
                                     "description": "Status dan informasi Bot.",
                                     "rowId": ".botstatus"
                                 }, {
-                                    "title": "|❗| Rules",
+                                    "title":      "|❗| ❯╾Rules╼-",
                                     "description": "User yang bijak selalu mematuhi Rules.",
                                     "rowId": ".rules"
                                 }, {
-                                    "title": "|👑| Sewa bot - Premium",
+                                    "title": "|💵|  ❯╾Sewa bot╼-",
                                     "description": "Untuk kamu yang ingin melihat daftar harga sewa dan premium.",
                                     "rowId": ".sewa"
                                 }],
