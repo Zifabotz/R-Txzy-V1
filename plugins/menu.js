@@ -240,9 +240,9 @@ _____•••••••••
                         "sections": [
                             {
                                 "rows": [{
-                                    "title":  "|🛠️| ❯╾Status Bot╼-",
-                                    "description": "Status dan informasi Bot.",
-                                    "rowId": ".botstatus"
+                                    "title":  "|📥| ❯╾Donasi╼-",
+                                    "description": "Jangan lupa donasi untuk mendukung bot agar aktif selalu",
+                                    "rowId": ".donasi"
                                 }, {
                                     "title":      "|❗| ❯╾Rules╼-",
                                     "description": "User yang bijak selalu mematuhi Rules.",
@@ -382,9 +382,9 @@ _____•••••••••
                                     "description": "pemilik ZIFABOTZ",
                                     "rowId": ".owner"
                                 }, {
-                                    "title": "|💳| Donasi",
-                                    "description": "Jangan lupa donasi untuk mendukung bot agar aktif selalu",
-                                    "rowId": ".donasi"
+                                    "title": "|🛠|Status bot",
+                                    "description": "Status dan informasi bot",
+                                    "rowId": ".botstatus"
                                 }, {
                                     "title": "|🥀| Kata penutup",
                                     "description": "Terimakasih untuk user yang telah menggunakan bot, jika ada kesalahan atau permintaan bisa chat ke nomor owner\nNote: chat P/main² tidak akan di respon(user bisa terkena banned/block)",
