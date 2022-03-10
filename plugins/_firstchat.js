@@ -31,16 +31,16 @@ function ucapan() {
     const time = moment.tz('Asia/Jakarta').format('HH')
     res = "Selamat dinihari"
     if (time >= 4) { 
-        res = "Selamat pagi tod"
+        res = "Selamat pagi ya"
     }
     if (time > 10) {
-        res = "Selamat siang tod"
+        res = "Selamat siang ya"
     }
     if (time >= 15) {
-        res = "Selamat sore tod"
+        res = "Selamat sore ya"
     }
     if (time >= 18) {
-        res = "Selamat malam tod"
+        res = "Selamat malam ya"
     }
     return res
 }
