@@ -235,7 +235,7 @@ _____•••••••••
 
 ▌│█║▌║▌║║▌║▌║█│▌ `.trim(),
                         "footerText": "⳹ ❋ཻུ۪۪⸙𝙕𝙞𝙛𝙖𝙗𝙤𝙩𝙯⳹ ❋ཻུ۪۪⸙ by.rozi",
-                        "buttonText": "*Klik Disini mek*",
+                        "buttonText": "««TAMPILAN MENU««",
                         "listType": "SINGLE_SELECT",
                         "sections": [
                             {
