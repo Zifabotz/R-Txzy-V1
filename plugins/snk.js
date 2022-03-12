@@ -28,7 +28,8 @@ Syarat Ketentuan ⳹ ❋ཻུ۪۪⸙Zifabotz⳹ ❋ཻུ۪۪⸙
 
 - Rozi(owner)
 - ⳹ ❋ཻུ۪۪⸙Zifabotz⳹ ❋ཻུ۪۪⸙
-
+- ⳹ ❋ཻུ۪۪⸙Zifabotz2⳹ ❋ཻུ۪۪⸙
+- ⳹ ❋ཻུ۪۪⸙Zifabotz3⳹ ❋ཻུ۪۪⸙
 Peraturan: 4 Maret 2022
 `.trim()
     conn.send2ButtonLoc(m.chat, await(await fetch(image)).buffer(), teks, watermark, 'Menu', '.menu', 'Owner', '.owner', m)
