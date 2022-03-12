@@ -9,7 +9,7 @@ const groups = chats.filter(v => v.jid.endsWith('g.us'))
 const defaultMenu = {
   before: `
 ╭═══════════════════════⬣
-║╭──❉ 〔⳹ ❋ཻུ۪۪⸙𝙕𝙞𝙛𝙖𝙗𝙤𝙩𝙯⳹ ❋ཻུ۪۪〕 ❉──────
+║╭──❉ 〔⳹ ❋ུ۪۪DIKABOTZ⳹ ❋ཻུ۪۪〕 ❉──────
 ║│➸Hai, %name!
 ║│➸Tersisa *%limit Limit*
 ║│➸Role *%role*
@@ -222,10 +222,10 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
                     "listMessage":  {
                         "title": `*${ucapan()}, ${name}*`.trim(),
                         "description": `╭═══════════════════════
-║╭──❉ 〔 ⳹ ❋ཻུ۪۪⸙𝙕𝙞𝙛𝙖𝙗𝙤𝙩𝙯⳹ ❋ཻུ۪۪ 〕 ❉────── 
+║╭──❉ 〔 ⳹ ❋ཻུ۪۪dikabotz⳹ ❋ཻུ۪۪ 〕 ❉────── 
 ║│➸⏰Aktif selama ${uptime}
 ║│➸⚡Baterai ${conn.battery != undefined ? `${conn.battery.value}% ${conn.battery.live ? '🔌 pengisian' : ''}` : 'tidak diketahui'}
-║│➸zifabotz
+║│➸dikabotz & zifabotz
 ║│➸*${conn.blocklist.length}* Terblock
 ║│➸*${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length}* Chat Terbanned
 ║│➸*${Object.entries(global.db.data.users).filter(user => user[1].banned).length}* Pengguna Terbanned
@@ -234,7 +234,7 @@ _____•••••••••
 (_𝙱𝚎𝚋𝚎𝚛𝚊𝚙𝚊 𝚋𝚞𝚝𝚝𝚘𝚗 𝚊𝚍𝚊 𝚢𝚐 𝚐𝚊𝚔 𝚋𝚎𝚛𝚏𝚞𝚗𝚐𝚜𝚒_)
 
 ▌│█║▌║▌║║▌║▌║█│▌ `.trim(),
-                        "footerText": "⳹ ❋ཻུ۪۪⸙𝙕𝙞𝙛𝙖𝙗𝙤𝙩𝙯⳹ ❋ཻུ۪۪⸙ by.rozi",
+                        "footerText": "⳹ ❋ཻུ۪۪dikabotz⳹ ❋ཻུ۪۪⸙ by.dika",
                         "buttonText": "««TAMPILAN MENU««",
                         "listType": "SINGLE_SELECT",
                         "sections": [
@@ -378,8 +378,8 @@ _____•••••••••
                                 "title": "⟣──────────────❲  All-Menu  ❳──────────────⟢"
                             }, {
                                 "rows": [{
-                                    "title": "|👩‍💻| Owner ZIFABOTZ",
-                                    "description": "pemilik ZIFABOTZ",
+                                    "title": "|👩‍💻| Owner DIKABOTZ",
+                                    "description": "pemilik DIKABOTZ",
                                     "rowId": ".owner"
                                 }, {
                                     "title": "|🛠|Status bot",
